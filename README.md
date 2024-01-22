@@ -5,7 +5,7 @@ A serie of 3 Python projects of 3 games:
 - a MADLIBS GENERATOR
 - a TIMED MATH CHALLENGE
 
-By Dauli,  CS Student of University of the People
+By Dauli,  CS Student of University of the People. 
 Credit to TIM, 2023, (https://www.youtube.com/watch?v=21FnnGKSRZo)
 
 Reference:

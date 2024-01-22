@@ -24,14 +24,8 @@ import random
 def roll():
     min_value = 1
     max_value = 6
-
-    # lets use the random module to roll between #s
     roll = random.randint(min_value, max_value)
-
     return roll
-
-# value = roll()
-# print(value)
 
 # continue to ask user for a valid number of players
 while True:
@@ -43,12 +37,11 @@ while True:
         players = int(players)
 
         # check if the number is between 1 and 4
-        if players >= 1 and players <= 4:
+        if players >= 2 and players <= 4:
             break
         else:
             print("Must be between 1 - 4 players.")
     else:
         print("Invalid, try again.")
 
-print(players)
 
