@@ -44,4 +44,25 @@ while True:
     else:
         print("Invalid, try again.")
 
+# Assimulate each players turn
+max_score = 50
+player_scores = [0 for _ in range(players)]
 
+while max(player_scores) < max_score:
+
+    current_score = 0
+
+    should_roll = input('Would you like to rool (y)? ')
+    if should_roll.lower() != 'y':
+        break
+    
+    # use roll() function
+    value = roll()
+    if value == 1:
+        print('You rolled a 1! Turn done!')
+        break
+    else:
+        current_score += 1
+        print('You rolled a:', value)
+
+    print('Your score is:', current_score)
