@@ -2,7 +2,7 @@
 # Story that has the replaced words, which user has to provide for each case.
 
 # open FILE
-path = 'C://Users//Alex-Internet//Dropbox//PROJECTS//Python//project1//madlib_story.txt'
+path = 'path_to_your_file_Here//madlib_story.txt'
 with open(path, "r") as f:
     story = f.read()
 
