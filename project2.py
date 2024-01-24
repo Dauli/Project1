@@ -1,16 +1,18 @@
 # Project of MADLIBS GENERATOR
 # Story that has the replaced words, which user has to provide for each case.
 
+# open FILE
 path = 'C://Users//Alex-Internet//Dropbox//PROJECTS//Python//project1//madlib_story.txt'
 with open(path, "r") as f:
     story = f.read()
 
+# define a set() to use unique word and declare some variables
 words = set()
 start_of_word = -1
-
 target_start = '<'
 target_end = '>'
 
+# get every words and add them to set of words
 for i, char in enumerate(story):
     if char == target_start:
         start_of_word = i
@@ -19,4 +21,5 @@ for i, char in enumerate(story):
         words.add(word)
         start_of_word = -1
 
-print(words)
+# Get answers from user and map to each word as value of key
+
