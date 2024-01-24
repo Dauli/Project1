@@ -27,4 +27,8 @@ for word in words:
     answer = input('Enter a word for ' + '"' + word + '"' + ': ' )
     answers[word] = answer
 
-print(answers)
+# Get each answer and replace it into the story
+for word in words:
+    story = story.replace(word, answers[word])
+
+print('\n', story, '\n')
