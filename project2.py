@@ -22,4 +22,9 @@ for i, char in enumerate(story):
         start_of_word = -1
 
 # Get answers from user and map to each word as value of key
+answers = {}
+for word in words:
+    answer = input('Enter a word for ' + '"' + word + '"' + ': ' )
+    answers[word] = answer
 
+print(answers)
